@@ -1,0 +1,4 @@
+oauth.consumerKey=[YOUR TWITTER CONSUMER KEY]
+oauth.consumerSecret=[YOUR TWITTER CONSUMER SECRET]
+oauth.accessToken=[YOUR TWITTER ACCESS TOKEN]
+oauth.accessTokenSecret=[YOUR TWITTER ACCESS TOKEN SECRET]

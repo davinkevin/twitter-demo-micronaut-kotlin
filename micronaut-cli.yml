@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: fr.olivierrevial
+---
+testFramework: spock
+sourceLanguage: kotlin
