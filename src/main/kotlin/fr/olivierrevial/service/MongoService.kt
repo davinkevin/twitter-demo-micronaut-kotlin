@@ -1,4 +1,4 @@
-package fr.olivierrevial
+package fr.olivierrevial.service
 
 import com.mongodb.reactivestreams.client.MongoClient
 import com.mongodb.reactivestreams.client.MongoCollection
@@ -12,10 +12,10 @@ import javax.inject.Singleton
 class MongoService(private val mongo: MongoClient) {
     companion object {
         val LOG = LoggerFactory.getLogger(MongoService::class.java)
-        val TWEETS_COLLECTION = "tweets"
+        const val TWEETS_COLLECTION = "tweets"
     }
 
-    fun list(): Flowable<Tweet> {
+    fun list(total: Int?): Flowable<Tweet> {
         return Flowable.fromPublisher<Tweet>(getCollection().find())
     }
 
@@ -33,7 +33,7 @@ class MongoService(private val mongo: MongoClient) {
 
     private fun getCollection(): MongoCollection<Tweet> {
         return mongo
-                .getDatabase("micronaut")
-                .getCollection<Tweet>(TWEETS_COLLECTION, Tweet::class.java)
+            .getDatabase("micronaut")
+            .getCollection<Tweet>(TWEETS_COLLECTION, Tweet::class.java)
     }
 }

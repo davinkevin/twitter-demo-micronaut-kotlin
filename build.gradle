@@ -26,6 +26,7 @@ dependencyManagement {
 }
 
 dependencies {
+    annotationProcessor "io.micronaut:micronaut-security"
     compile "io.micronaut.configuration:micronaut-micrometer-core"
     compile "io.micronaut:micronaut-http-client"
     compile "io.micronaut.configuration:micronaut-mongo-reactive"
@@ -38,6 +39,8 @@ dependencies {
     compile "javax.annotation:javax.annotation-api"
     compile 'org.twitter4j:twitter4j-core:4.0.6'
     compile "io.micronaut.configuration:micronaut-hibernate-validator"
+    compile "io.micronaut:micronaut-security"
+    compile "io.micronaut:micronaut-security-jwt"
     compileOnly "com.oracle.substratevm:svm"
     kapt "io.micronaut.configuration:micronaut-openapi"
     kapt "io.micronaut:micronaut-inject-java"

@@ -1,6 +1,5 @@
-package fr.olivierrevial
+package fr.olivierrevial.service
 
-import io.reactivex.Flowable
 import org.slf4j.LoggerFactory
 import twitter4j.Query
 import twitter4j.Twitter
@@ -36,10 +35,10 @@ class TwitterService(private val twitter: Twitter) {
             val tweets = searchResult.tweets
                 .map { t ->
                     Tweet(
-                        t.id,
-                        t.createdAt,
-                        t.user.screenName,
-                        t.text)
+                            t.id,
+                            t.createdAt,
+                            t.user.screenName,
+                            t.text)
                 }
             TwitterResult(tweets, searchResult.nextQuery())
         } catch (e: TwitterException) {

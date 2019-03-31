@@ -1,5 +1,8 @@
-package fr.olivierrevial
+package fr.olivierrevial.job
 
+import fr.olivierrevial.service.MongoService
+import fr.olivierrevial.service.TwitterResult
+import fr.olivierrevial.service.TwitterService
 import io.micronaut.scheduling.annotation.Scheduled
 import io.reactivex.Single
 import org.slf4j.LoggerFactory

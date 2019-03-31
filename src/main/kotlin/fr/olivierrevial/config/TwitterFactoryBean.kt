@@ -1,4 +1,4 @@
-package fr.olivierrevial
+package fr.olivierrevial.config
 
 
 import io.micronaut.context.annotation.Bean

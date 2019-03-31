@@ -1,4 +1,4 @@
-package fr.olivierrevial
+package fr.olivierrevial.service
 
 import java.util.*
 

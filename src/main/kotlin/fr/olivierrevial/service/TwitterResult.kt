@@ -1,4 +1,4 @@
-package fr.olivierrevial
+package fr.olivierrevial.service
 
 import twitter4j.Query
 

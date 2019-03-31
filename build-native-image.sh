@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 ./gradlew assemble
 java -cp build/libs/twitter-images-kotlin-0.1-all.jar io.micronaut.graal.reflect.GraalClassLoadingAnalyzer
 native-image --no-server \
