@@ -70,7 +70,7 @@ shadowJar {
 run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=1')
 
 mainClassName = "fr.olivierrevial.Application"
-jib.to.image = 'gcr.io/twitter-images-kotlin/jib-image'
+jib.to.image = 'gcr.io/twitter-demo-kotlin/jib-image'
 
 test {
     useJUnitPlatform()

@@ -21,7 +21,7 @@ class AddMoreTweetsJob(private val twitterService: TwitterService, private val m
 
     var nextQuery: Query? = null
 
-    @Scheduled(fixedRate = "10s")
+    @Scheduled(fixedRate = "10s", initialDelay = "1m")
     fun addTweets() {
         LOG.info("Will now add more tweets...")
 

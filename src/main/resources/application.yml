@@ -1,7 +1,7 @@
 ---
 micronaut:
     application:
-        name: twitter-images-kotlin
+        name: twitter-demo-kotlin
 
 ---
 micronaut:
