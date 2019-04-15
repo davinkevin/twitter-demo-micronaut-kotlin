@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 docker build . -t twitter-demo-kotlin
 echo
 echo
